@@ -87,8 +87,8 @@ class FormViewController: FormViewControllerType {
     @IBAction func ok(_ sender: AnyObject?) {
         self.dismiss(sender: sender)
 
-        let key = keyTextField.text
-        let secret = secretTextField.text
+        let key = "d084aca8b3bb201f9db2fe6ec0329b22" //keyTextField.text
+        let secret = "7ea3d22026dc64e5" // secretTextField.text
         let handlerType = urlHandlerType
         delegate?.didValidate(key: key, secret: secret, handlerType: handlerType)
     }

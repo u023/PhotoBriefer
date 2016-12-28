@@ -263,7 +263,7 @@ extension ViewController {
         self.oauthswift = oauthswift
         oauthswift.authorizeURLHandler = getURLHandler()
         let _ = oauthswift.authorize(
-            withCallbackURL: URL(string: "oauth-swift://oauth-callback/flickr")!,
+            withCallbackURL: URL(string: "PhotoBriefer://oauth-callback/flickr")!,
             success: { credential, response, parameters in
                 self.showTokenAlert(name: serviceParameters["name"], credential: credential)
                 self.testFlickr(oauthswift, consumerKey: serviceParameters["consumerKey"]!)
@@ -1347,6 +1347,7 @@ extension ViewController {
         var message = "oauth_token:\(credential.oauthToken)"
         if !credential.oauthTokenSecret.isEmpty {
             message += "\n\noauth_token_secret:\(credential.oauthTokenSecret)"
+            print("yonglim noauth_token_secret")
         }
         self.showAlertView(title: name ?? "Service", message: message)
         

@@ -283,7 +283,7 @@
 		<key>accessTokenUrl</key>
 		<string>https://www.flickr.com/services/oauth/access_token</string>
 		<key>callbackURL</key>
-		<string>oauth-swift://oauth-callback/flickr</string>
+		<string>PhotoBriefer://oauth-callback/flickr</string>
 	</dict>
 	<key>Github</key>
 	<dict>
