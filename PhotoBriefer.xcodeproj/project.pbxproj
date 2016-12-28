@@ -17,6 +17,62 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4DF348FD1E1371B10058E156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F435027A1A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
+		4DF348FF1E1371B10058E156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C48B28021AFA598D00C7DEF6;
+			remoteInfo = OAuthSwiftOSX;
+		};
+		4DF349011E1371B10058E156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4B6EE1E1BF74CE300443596;
+			remoteInfo = OAuthSwiftTVOS;
+		};
+		4DF349031E1371B10058E156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C40890C01C11B37000E3146A;
+			remoteInfo = OAuthSwiftWatchOS;
+		};
+		4DF349051E1371B10058E156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F451E3C5195B8CD80051434C;
+			remoteInfo = OAuthSwiftDemo;
+		};
+		4DF349071E1371B10058E156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C49FD5241AFB5DF500791E1A;
+			remoteInfo = OAuthSwiftOSXDemo;
+		};
+		4DF349091E1371B10058E156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4D50DF71BFB693F0053B624;
+			remoteInfo = OAuthSwiftTests;
+		};
+		4DF3490B1E13722E0058E156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F43502791A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
 		4DF3CAD11E131AA8007B64B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DF3CAB41E131AA8007B64B6 /* Project object */;
@@ -34,6 +90,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = OAuthSwift/OAuthSwift.xcodeproj; sourceTree = "<group>"; };
 		4DF3CABC1E131AA8007B64B6 /* PhotoBriefer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBriefer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF3CABF1E131AA8007B64B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF3CAC11E131AA8007B64B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +131,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DF348F41E1371B10058E156 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DF348FE1E1371B10058E156 /* OAuthSwift.framework */,
+				4DF349001E1371B10058E156 /* OAuthSwift.framework */,
+				4DF349021E1371B10058E156 /* OAuthSwift.framework */,
+				4DF349041E1371B10058E156 /* OAuthSwift.framework */,
+				4DF349061E1371B10058E156 /* OAuthSwiftDemo.app */,
+				4DF349081E1371B10058E156 /* OAuthSwiftOSXDemo.app */,
+				4DF3490A1E1371B10058E156 /* OAuthSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4DF3CAB31E131AA8007B64B6 = {
 			isa = PBXGroup;
 			children = (
+				4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */,
 				4DF3CABE1E131AA8007B64B6 /* PhotoBriefer */,
 				4DF3CAD31E131AA8007B64B6 /* PhotoBrieferTests */,
 				4DF3CADE1E131AA8007B64B6 /* PhotoBrieferUITests */,
@@ -139,6 +211,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4DF3490C1E13722E0058E156 /* PBXTargetDependency */,
 			);
 			name = PhotoBriefer;
 			productName = PhotoBriefer;
@@ -221,6 +294,12 @@
 			mainGroup = 4DF3CAB31E131AA8007B64B6;
 			productRefGroup = 4DF3CABD1E131AA8007B64B6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4DF348F41E1371B10058E156 /* Products */;
+					ProjectRef = 4DF348F31E1371B10058E156 /* OAuthSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4DF3CABB1E131AA8007B64B6 /* PhotoBriefer */,
@@ -229,6 +308,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4DF348FE1E1371B10058E156 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 4DF348FD1E1371B10058E156 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4DF349001E1371B10058E156 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 4DF348FF1E1371B10058E156 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4DF349021E1371B10058E156 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 4DF349011E1371B10058E156 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4DF349041E1371B10058E156 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 4DF349031E1371B10058E156 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4DF349061E1371B10058E156 /* OAuthSwiftDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftDemo.app;
+			remoteRef = 4DF349051E1371B10058E156 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4DF349081E1371B10058E156 /* OAuthSwiftOSXDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftOSXDemo.app;
+			remoteRef = 4DF349071E1371B10058E156 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4DF3490A1E1371B10058E156 /* OAuthSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuthSwiftTests.xctest;
+			remoteRef = 4DF349091E1371B10058E156 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4DF3CABA1E131AA8007B64B6 /* Resources */ = {
@@ -286,6 +417,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4DF3490C1E13722E0058E156 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			targetProxy = 4DF3490B1E13722E0058E156 /* PBXContainerItemProxy */;
+		};
 		4DF3CAD21E131AA8007B64B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DF3CABB1E131AA8007B64B6 /* PhotoBriefer */;
@@ -514,6 +650,7 @@
 				4DF3CAE61E131AA8007B64B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DF3CAE71E131AA8007B64B6 /* Build configuration list for PBXNativeTarget "PhotoBrieferTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +659,7 @@
 				4DF3CAE91E131AA8007B64B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DF3CAEA1E131AA8007B64B6 /* Build configuration list for PBXNativeTarget "PhotoBrieferUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +668,7 @@
 				4DF3CAEC1E131AA8007B64B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

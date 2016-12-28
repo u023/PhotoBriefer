@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OAuthSwift
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // oauth swift object (retain)
+    var oauthswift: OAuthSwift?
 
 }
+
 
