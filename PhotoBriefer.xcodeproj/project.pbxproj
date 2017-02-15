@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		4DAD0FA81E53D5EB00B8851B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD0FA71E53D5EB00B8851B /* AppDelegate.swift */; };
 		4DAD0FAA1E53D5EB00B8851B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD0FA91E53D5EB00B8851B /* ViewController.swift */; };
-		4DAD0FAD1E53D5EB00B8851B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAD0FAB1E53D5EB00B8851B /* Main.storyboard */; };
 		4DAD0FAF1E53D5EB00B8851B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAD0FAE1E53D5EB00B8851B /* Assets.xcassets */; };
 		4DAD0FB21E53D5EB00B8851B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAD0FB01E53D5EB00B8851B /* LaunchScreen.storyboard */; };
 		4DAD0FBD1E53D5EC00B8851B /* PhotoBrieferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD0FBC1E53D5EC00B8851B /* PhotoBrieferTests.swift */; };
 		4DAD0FC81E53D5EC00B8851B /* PhotoBrieferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD0FC71E53D5EC00B8851B /* PhotoBrieferUITests.swift */; };
 		4DAD0FEE1E53D68F00B8851B /* libFlickrKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAD0FDF1E53D65300B8851B /* libFlickrKit.a */; };
 		4DAD0FF11E53D71C00B8851B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAD0FF01E53D71C00B8851B /* SystemConfiguration.framework */; };
+		4DC543B61E542BB900F7C8A8 /* PhotoUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC543B31E542BB900F7C8A8 /* PhotoUploadViewController.swift */; };
+		4DC543B71E542BB900F7C8A8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC543B41E542BB900F7C8A8 /* AuthViewController.swift */; };
+		4DC543B81E542BB900F7C8A8 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC543B51E542BB900F7C8A8 /* PhotosViewController.swift */; };
+		4DC543BF1E542C7900F7C8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC543BD1E542C7900F7C8A8 /* Main.storyboard */; };
 		C919233CA439B56A54E8EF15 /* Pods_PhotoBriefer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4843BA016FE3FA790226AD03 /* Pods_PhotoBriefer.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +100,6 @@
 		4DAD0FA41E53D5EB00B8851B /* PhotoBriefer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBriefer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAD0FA71E53D5EB00B8851B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DAD0FA91E53D5EB00B8851B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4DAD0FAC1E53D5EB00B8851B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DAD0FAE1E53D5EB00B8851B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DAD0FB11E53D5EB00B8851B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DAD0FB31E53D5EB00B8851B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +111,10 @@
 		4DAD0FC91E53D5EC00B8851B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DAD0FD51E53D65300B8851B /* FlickrKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlickrKit.xcodeproj; path = FlickrKit/FlickrKit.xcodeproj; sourceTree = "<group>"; };
 		4DAD0FF01E53D71C00B8851B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4DC543B31E542BB900F7C8A8 /* PhotoUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoUploadViewController.swift; sourceTree = "<group>"; };
+		4DC543B41E542BB900F7C8A8 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		4DC543B51E542BB900F7C8A8 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		4DC543BE1E542C7900F7C8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEF4A82904E3878EEBB82B87 /* Pods-PhotoBriefer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBriefer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoBriefer/Pods-PhotoBriefer.debug.xcconfig"; sourceTree = "<group>"; };
 		F0AEB5B3735C49041D7D507D /* Pods-PhotoBriefer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBriefer.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoBriefer/Pods-PhotoBriefer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,9 +173,12 @@
 		4DAD0FA61E53D5EB00B8851B /* PhotoBriefer */ = {
 			isa = PBXGroup;
 			children = (
+				4DC543BD1E542C7900F7C8A8 /* Main.storyboard */,
+				4DC543B31E542BB900F7C8A8 /* PhotoUploadViewController.swift */,
+				4DC543B41E542BB900F7C8A8 /* AuthViewController.swift */,
+				4DC543B51E542BB900F7C8A8 /* PhotosViewController.swift */,
 				4DAD0FA71E53D5EB00B8851B /* AppDelegate.swift */,
 				4DAD0FA91E53D5EB00B8851B /* ViewController.swift */,
-				4DAD0FAB1E53D5EB00B8851B /* Main.storyboard */,
 				4DAD0FAE1E53D5EB00B8851B /* Assets.xcassets */,
 				4DAD0FB01E53D5EB00B8851B /* LaunchScreen.storyboard */,
 				4DAD0FB31E53D5EB00B8851B /* Info.plist */,
@@ -392,9 +401,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC543BF1E542C7900F7C8A8 /* Main.storyboard in Resources */,
 				4DAD0FB21E53D5EB00B8851B /* LaunchScreen.storyboard in Resources */,
 				4DAD0FAF1E53D5EB00B8851B /* Assets.xcassets in Resources */,
-				4DAD0FAD1E53D5EB00B8851B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,8 +476,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC543B71E542BB900F7C8A8 /* AuthViewController.swift in Sources */,
 				4DAD0FAA1E53D5EB00B8851B /* ViewController.swift in Sources */,
 				4DAD0FA81E53D5EB00B8851B /* AppDelegate.swift in Sources */,
+				4DC543B61E542BB900F7C8A8 /* PhotoUploadViewController.swift in Sources */,
+				4DC543B81E542BB900F7C8A8 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,20 +526,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4DAD0FAB1E53D5EB00B8851B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DAD0FAC1E53D5EB00B8851B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4DAD0FB01E53D5EB00B8851B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4DAD0FB11E53D5EB00B8851B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4DC543BD1E542C7900F7C8A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DC543BE1E542C7900F7C8A8 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -635,9 +647,10 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FlickrKit/Classes/**";
 				INFOPLIST_FILE = PhotoBriefer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.u023.PhotoBriefer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.u023.PhotoBriefer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -650,9 +663,10 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FlickrKit/Classes/**";
 				INFOPLIST_FILE = PhotoBriefer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.u023.PhotoBriefer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.u023.PhotoBriefer2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

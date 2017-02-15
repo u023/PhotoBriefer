@@ -1,26 +1,275 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NVa-6a-WIE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoBriefer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="GIY-GX-Jt2"/>
+                        <viewControllerLayoutGuide type="bottom" id="C54-FE-QvC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hKy-HD-Wax">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dll-Od-yXJ">
+                                <rect key="frame" x="62" y="183" width="276" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Show My Photos">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="photostreamButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIu-H9-7TW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2br-mK-fXx">
+                                <rect key="frame" x="103" y="247" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Explore Todays Interesting">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTodaysInterestingWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qh3-3I-ULm"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="llu-yG-btF">
+                                <rect key="frame" x="20" y="326" width="560" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibd-f8-ue1">
+                                <rect key="frame" x="528" y="154" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijT-8p-apQ">
+                                <rect key="frame" x="300" y="336" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf3-VW-2Sd">
+                                <rect key="frame" x="151" y="352" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Upload Photo">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadPhotoButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MLO-1n-puk"/>
+                                    <segue destination="X42-DF-uYA" kind="show" identifier="SegueToUpload" id="IJ1-7w-epK">
+                                        <segue key="commit" inheritsFrom="parent" id="ShN-av-MhY"/>
+                                        <segue key="preview" inheritsFrom="commit" id="tTj-yI-bCQ"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mg7-O5-PNL">
+                                <rect key="frame" x="62" y="75" width="276" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Please wait ...">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="authButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9MH-ea-4JV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Checking authentication status ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN4-eC-OqB">
+                                <rect key="frame" x="72" y="135" width="256" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Pko-Qz-blL"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="authButton" destination="mg7-O5-PNL" id="rWy-1f-D8p"/>
+                        <outlet property="authLabel" destination="vN4-eC-OqB" id="Egt-OV-XLt"/>
+                        <outlet property="uploadPhotoButton" destination="uf3-VW-2Sd" id="cYm-qm-J5R"/>
+                        <segue destination="5iq-7g-Q0U" kind="show" identifier="SegueToPhotos" id="kfR-6K-zSa"/>
+                        <segue destination="cl3-0b-6Zy" kind="show" identifier="SegueToAuth" id="VvU-As-g7W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1201" y="323"/>
+        </scene>
+        <!--Photos View Controller-->
+        <scene sceneID="oA8-cr-UBm">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="5iq-7g-Q0U" customClass="PhotosViewController" customModule="PhotoBriefer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7qT-Yb-yVh"/>
+                        <viewControllerLayoutGuide type="bottom" id="dJN-su-az1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0RN-lE-Bp2">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DsS-Wh-tqv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DsS-Wh-tqv" firstAttribute="top" secondItem="7qT-Yb-yVh" secondAttribute="bottom" id="Usi-8E-LbH"/>
+                            <constraint firstItem="DsS-Wh-tqv" firstAttribute="leading" secondItem="0RN-lE-Bp2" secondAttribute="leading" id="Wpb-bm-jRr"/>
+                            <constraint firstItem="dJN-su-az1" firstAttribute="top" secondItem="DsS-Wh-tqv" secondAttribute="bottom" id="ZkS-8a-EZw"/>
+                            <constraint firstAttribute="trailing" secondItem="DsS-Wh-tqv" secondAttribute="trailing" id="vIo-nW-Q2i"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageScrollView" destination="DsS-Wh-tqv" id="1Pf-MQ-dLr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vZ-aI-1NE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260" y="1086"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="a4e-jL-erT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NVa-6a-WIE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HmX-ih-gCc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dHn-uD-kbQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="626-3x-nkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="322"/>
+        </scene>
+        <!--Auth View Controller-->
+        <scene sceneID="Idd-Cc-TFt">
+            <objects>
+                <viewController id="cl3-0b-6Zy" customClass="AuthViewController" customModule="PhotoBriefer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3B-n9-aqr"/>
+                        <viewControllerLayoutGuide type="bottom" id="dXl-84-vqL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qes-aO-dN5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fG2-3t-MWC">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fG2-3t-MWC" secondAttribute="trailing" id="amy-fM-8ri"/>
+                            <constraint firstItem="fG2-3t-MWC" firstAttribute="leading" secondItem="Qes-aO-dN5" secondAttribute="leading" id="b6o-Ge-GUT"/>
+                            <constraint firstItem="dXl-84-vqL" firstAttribute="top" secondItem="fG2-3t-MWC" secondAttribute="bottom" id="j8P-mH-pC8"/>
+                            <constraint firstItem="fG2-3t-MWC" firstAttribute="top" secondItem="y3B-n9-aqr" secondAttribute="bottom" id="yJ5-7P-Bjp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="fG2-3t-MWC" id="8wr-HN-zNB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVK-lC-pqx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="1085"/>
+        </scene>
+        <!--UploadImage-->
+        <scene sceneID="lat-90-ugY">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="X42-DF-uYA" customClass="PhotoUploadViewController" customModule="PhotoBriefer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iah-af-OVF"/>
+                        <viewControllerLayoutGuide type="bottom" id="V4Z-KH-Xvs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="djx-nR-zqL">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mbn-ae-XSo">
+                                <rect key="frame" x="78" y="30" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="8FH-1u-MKZ"/>
+                                    <constraint firstAttribute="width" constant="220" id="Bq0-5M-OBz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8X-eN-Kp9">
+                                <rect key="frame" x="0.0" y="515" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.9980931878" green="0.75772172209999999" blue="0.032601628450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="J8X-eN-Kp9" secondAttribute="height" multiplier="75:16" id="fu9-a6-nRa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <state key="normal" title="Upload Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="picUploadButtonPressed:" destination="X42-DF-uYA" eventType="touchUpInside" id="XHf-13-VQU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpY-u2-34j">
+                                <rect key="frame" x="0.0" y="422" width="375" height="85"/>
+                                <color key="backgroundColor" red="0.31272804739999999" green="0.76564222569999996" blue="0.9700087905" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QpY-u2-34j" secondAttribute="height" multiplier="75:17" id="ZDZ-6V-bu9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <state key="normal" title="Select Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectImageButtonPressed:" destination="X42-DF-uYA" eventType="touchUpInside" id="Egr-Vh-uI7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V4Z-KH-Xvs" firstAttribute="top" secondItem="J8X-eN-Kp9" secondAttribute="bottom" constant="8" id="2I6-Do-9Qh"/>
+                            <constraint firstItem="mbn-ae-XSo" firstAttribute="centerX" secondItem="djx-nR-zqL" secondAttribute="centerX" id="AX2-gP-tFl"/>
+                            <constraint firstItem="J8X-eN-Kp9" firstAttribute="top" secondItem="QpY-u2-34j" secondAttribute="bottom" constant="8" id="Czj-iJ-Jj1"/>
+                            <constraint firstItem="QpY-u2-34j" firstAttribute="leading" secondItem="djx-nR-zqL" secondAttribute="leading" id="Jf3-rn-QAD"/>
+                            <constraint firstAttribute="trailing" secondItem="J8X-eN-Kp9" secondAttribute="trailing" id="LMp-wW-UhR"/>
+                            <constraint firstItem="J8X-eN-Kp9" firstAttribute="leading" secondItem="djx-nR-zqL" secondAttribute="leading" id="bpU-gC-pXF"/>
+                            <constraint firstItem="mbn-ae-XSo" firstAttribute="top" secondItem="iah-af-OVF" secondAttribute="bottom" constant="30" id="bpZ-ey-JlX"/>
+                            <constraint firstAttribute="trailing" secondItem="QpY-u2-34j" secondAttribute="trailing" id="yFg-cf-Q2z"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="UploadImage" id="8EA-R4-60a"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="objUploadingImageView" destination="mbn-ae-XSo" id="g20-kC-4Jj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sru-qB-wys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260" y="322"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="IJ1-7w-epK"/>
+    </inferredMetricsTieBreakers>
 </document>

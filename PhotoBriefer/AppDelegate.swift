@@ -14,9 +14,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        // Override point for customization after application launch.
+        
+        let scheme = url.scheme
+        if ("photobriefer" == scheme) {
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "UserAuthCallbackNotification"), object: url)
+        }
+        return true
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Initialise FlickrKit with your flickr api key and shared secret
+        let apiKey: String! = "d084aca8b3bb201f9db2fe6ec0329b22"
+        let secret: String! = "7ea3d22026dc64e5"
+        if (apiKey == nil || secret == nil) {
+            print("\n----------------------------------\nYou need to enter your own 'apiKey' and 'secret' in FKAppDelegate for the demo to run. \n\nYou can get these from your Flickr account settings.\n----------------------------------\n");
+            exit(0);
+        } else {
+            FlickrKit.shared().initialize(withAPIKey: apiKey, sharedSecret: secret);
+        }
         return true
     }
 
