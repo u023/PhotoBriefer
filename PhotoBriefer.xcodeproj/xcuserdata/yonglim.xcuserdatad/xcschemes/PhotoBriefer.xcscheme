@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DF3CABB1E131AA8007B64B6"
+               BlueprintIdentifier = "4DAD0FA31E53D5EB00B8851B"
                BuildableName = "PhotoBriefer.app"
                BlueprintName = "PhotoBriefer"
                ReferencedContainer = "container:PhotoBriefer.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DF3CACF1E131AA8007B64B6"
+               BlueprintIdentifier = "4DAD0FB71E53D5EB00B8851B"
                BuildableName = "PhotoBrieferTests.xctest"
                BlueprintName = "PhotoBrieferTests"
                ReferencedContainer = "container:PhotoBriefer.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DF3CADA1E131AA8007B64B6"
+               BlueprintIdentifier = "4DAD0FC21E53D5EC00B8851B"
                BuildableName = "PhotoBrieferUITests.xctest"
                BlueprintName = "PhotoBrieferUITests"
                ReferencedContainer = "container:PhotoBriefer.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4DF3CABB1E131AA8007B64B6"
+            BlueprintIdentifier = "4DAD0FA31E53D5EB00B8851B"
             BuildableName = "PhotoBriefer.app"
             BlueprintName = "PhotoBriefer"
             ReferencedContainer = "container:PhotoBriefer.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4DF3CABB1E131AA8007B64B6"
+            BlueprintIdentifier = "4DAD0FA31E53D5EB00B8851B"
             BuildableName = "PhotoBriefer.app"
             BlueprintName = "PhotoBriefer"
             ReferencedContainer = "container:PhotoBriefer.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4DF3CABB1E131AA8007B64B6"
+            BlueprintIdentifier = "4DAD0FA31E53D5EB00B8851B"
             BuildableName = "PhotoBriefer.app"
             BlueprintName = "PhotoBriefer"
             ReferencedContainer = "container:PhotoBriefer.xcodeproj">

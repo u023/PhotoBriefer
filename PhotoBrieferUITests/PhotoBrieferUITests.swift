@@ -2,8 +2,8 @@
 //  PhotoBrieferUITests.swift
 //  PhotoBrieferUITests
 //
-//  Created by yonglim on 12/27/16.
-//  Copyright © 2016 u023. All rights reserved.
+//  Created by yonglim on 2/14/17.
+//  Copyright © 2017 u023. All rights reserved.
 //
 
 import XCTest
